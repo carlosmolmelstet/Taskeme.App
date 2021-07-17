@@ -11,5 +11,18 @@ export const Container = styled.div`
             height: 100px;
         }
     }
+`;
+
+export const Sidebar = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    background:  ${props => props.theme.colors.navbar};
+    width: ${props => props.theme.widthNavBar};
     
+
+    .sidebar-item {
+        
+    }
 `;

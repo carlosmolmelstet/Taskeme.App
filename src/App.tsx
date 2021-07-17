@@ -1,16 +1,15 @@
 import React from 'react'
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 import usePersistetState from './utils/usePersistedState';
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import light from './styles/theme/light';
 import dark from './styles/theme/dark';
 
 import GlobalStyle from './styles/global';
 import Layout from './components/Layout/Layout';
-import Routes from './routes';
-
-
+import Home from './pages/Home';
+import Projects from './pages/Projects/Projects';
 
 function App() {
   const [theme, setTheme] = usePersistetState<DefaultTheme>('theme', dark);
@@ -21,12 +20,15 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-          <GlobalStyle />
-            <Layout  toggleTheme={toggleTheme}>
-              <Routes />
+      <Router>
+            <GlobalStyle />
+            <Layout toggleTheme={toggleTheme}>
+              <Switch>
+                <Route path='/' exact component={Home} />
+                <Route path='/Projects' component={Projects} />
+              </Switch>
             </Layout>
-      </div>
+      </Router>
     </ThemeProvider>
   );
 }

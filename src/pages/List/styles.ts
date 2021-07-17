@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
 
 
 export const Profile = styled.div`
-    background:  ${props => props.theme.colors.card};
+    background:  ${props => props.theme.colors.background};
     width: 100%;
 
     border-radius: 50px;
@@ -53,7 +53,7 @@ export const Profile = styled.div`
             }
 
             span {
-                color:  ${props => props.theme.colors.textLight};
+                color:  ${props => props.theme.colors.text};
                 font-weight: 300;
                 font-size: 25px;
             }
@@ -73,7 +73,7 @@ export const Profile = styled.div`
 
             margin-top:20px;
             
-            color:  ${props => props.theme.colors.textLight};
+            color:  ${props => props.theme.colors.text};
             font-weight: 300;
             font-size: 20px;
             img {
@@ -163,7 +163,7 @@ export const Profile = styled.div`
             }
 
             span {
-                color:  ${props => props.theme.colors.textLight};
+                color:  ${props => props.theme.colors.text};
                 font-weight: 300;
                 font-size: 25px;
             }
@@ -183,7 +183,7 @@ export const Profile = styled.div`
 
             margin-top:20px;
             
-            color:  ${props => props.theme.colors.textLight};
+            color:  ${props => props.theme.colors.text};
             font-weight: 300;
             font-size: 16px;
             img {
@@ -257,7 +257,7 @@ export const Profile = styled.div`
             }
 
             span {
-                color:  ${props => props.theme.colors.textLight};
+                color:  ${props => props.theme.colors.text};
                 font-weight: 300;
                 font-size: 15px;
             }
@@ -274,7 +274,7 @@ export const Profile = styled.div`
 
 export const Repo = styled.div`
     margin-top: 30px;
-    background:  ${props => props.theme.colors.card};
+    background:  ${props => props.theme.colors.background};
     width: 100%;
     border-radius: 50px;
     padding: 50px;

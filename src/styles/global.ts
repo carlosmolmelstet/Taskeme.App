@@ -7,6 +7,10 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
+    .App {
+        display: flex;
+    }
+
     body{
         background: ${props => props.theme.colors.background};
         color:  ${props => props.theme.colors.text};
@@ -23,7 +27,6 @@ export default createGlobalStyle`
         }
 
     }
-
     h1, h2,h3,h4,h5 {
         color:  ${props => props.theme.colors.title};
         font-weight: bold;
